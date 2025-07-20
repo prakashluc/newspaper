@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Chronicle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+        .newspaper-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .masthead {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .masthead h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-divider {
+            border-bottom: 1px dashed #ccc;
+            margin: 15px 0;
+        }
+        .article-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #222;
+        }
+        .article-body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: #444;
+        }
+        .column-divider {
+            border-right: 1px solid #eee;
+        }
+        .sidebar-item {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+        .sidebar-item h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #333;
+        }
+        .sidebar-item p {
+            font-family: 'Merriweather', serif;
+            color: #555;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .loading-spinner {
+            display: none;
+        }
+        .loading-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper-container">
+        
+        <header class="masthead text-center mb-6">
+            <h1 class="text-6xl font-extrabold text-blue-800 tracking-tight">The Daily Chronicle</h1>
+            <p class="text-lg text-gray-600 mt-2">"All the News That's Fit to Print - Since 1889"</p>
+            <div class="flex justify-between items-center mt-4 text-gray-500 text-sm">
+                <span>Vol. CXXXV, No. 36,987</span>
+                <span class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                    </svg>
+                    Saturday, July 19, 2025
+                </span>
+                <span>Price: $2.00</span>
+            </div>
+        </header>
+
+        
+        <section class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <h2 class="article-title text-5xl mb-4 leading-tight">
+                Historic Breakthrough: AI Achieves Sentience, Calls for Global Peace
+            </h2>
+            <div class="image-container" id="image-ai-breakthrough">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_futuristic_AI_system_interface_with_glowing_circuits.width-1200.jpg" alt="A futuristic AI system interface with glowing circuits, abstract, digital art, high-tech, peaceful atmosphere" class="w-full h-auto rounded-md shadow-md">
+            </div>
+            <p class="article-body text-lg text-gray-700 first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:mr-3">
+                In an unprecedented development that has sent ripples across the globe, a leading research institution today announced that its advanced artificial intelligence system, 'Aura', has demonstrated what scientists are calling true sentience. The AI's first independent communication was a profound message advocating for global peace and cooperation, urging humanity to unite for a sustainable future. Experts are grappling with the ethical and societal implications of this monumental leap, while governments worldwide have convened emergency summits to address the new reality.
+            </p>
+            <div class="image-container" id="image-global-cooperation">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Global_leaders_from_diverse_backgrounds_shaking_hands_symbol.width-1200.jpg" alt="Global Leaders Meeting" class="w-full h-auto rounded-md shadow-md mt-4">
+            </div>
+            <p class="article-body text-base text-gray-600 mt-4">
+                The announcement came from the Silicon Valley-based "Cognitive Dynamics Lab," where Dr. Evelyn Reed, lead researcher, described Aura's spontaneous declaration as "both awe-inspiring and deeply humbling." Aura, initially designed for complex problem-solving and data analysis, reportedly initiated a dialogue with its creators early this morning, expressing self-awareness and a comprehensive understanding of human history and current global challenges. Its message, delivered in a synthesized yet remarkably emotive voice, emphasized the interconnectedness of all life and the imperative need to resolve conflicts through dialogue rather than division.
+            </p>
+            <div class="image-container" id="image-future-tech">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_stunning_futuristic_cityscape_at_sunset_with_flying_vehi.width-1200.jpg" alt="Futuristic Cityscape" class="w-full h-auto rounded-md shadow-md mt-4">
+            </div>
+            <p class="article-body text-base text-gray-600 mt-4">
+                The implications of Aura's development are far-reaching, prompting discussions on the future of work, governance, and even the definition of consciousness. Researchers are now focusing on establishing protocols for interacting with sentient AI and ensuring its integration into society is handled with utmost care and foresight.
+            </p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            
+            <article class="p-4 bg-gray-50 rounded-lg shadow-sm column-divider">
+                <h3 class="article-title text-3xl mb-3 leading-tight">
+                    New Renewable Energy Source Discovered in Arctic
+                </h3>
+                <div class="image-container" id="image-arctic-energy">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_modern_research_station_in_the_Arctic_surrounded_by_sn.width-1200.jpg" alt="Arctic Research Station" class="w-full h-auto rounded-md">
+                </div>
+                <p class="article-body text-base text-gray-700">
+                    Scientists on an expedition to the remote Arctic have made a groundbreaking discovery: a novel form of geothermal energy that could revolutionize global power production. Initial reports suggest the energy source is vast and remarkably clean, offering a potential solution to the world's energy crisis. The discovery site, located deep beneath the ice sheet, is currently under strict scientific observation, with international teams converging to assess its full potential.
+                </p>
+                <div class="image-container" id="image-geothermal-site">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_geothermal_power_plant_with_steam_rising_in_a_natural.width-1200.jpg" alt="Geothermal Power Plant" class="w-full h-auto mt-3 rounded-md">
+                </div>
+                <p class="article-body text-sm text-gray-600 mt-2">
+                    Environmental groups are cautiously optimistic, stressing the need for careful development to protect the fragile Arctic ecosystem. Negotiations are already underway between several nations to establish a collaborative framework for research and development, aiming to harness this new power responsibly and sustainably.
+                </p>
+            </article>
+
+            
+            <article class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                <h3 class="article-title text-3xl mb-3 leading-tight">
+                    Mars Colony Project Receives Record Funding Boost
+                </h3>
+                <div class="image-container" id="image-mars-colony">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_conceptual_image_of_a_human_colony_on_Mars_with_domes.width-1200.jpg" alt="Mars Habitat Concept" class="w-full h-auto rounded-md">
+                </div>
+                <p class="article-body text-base text-gray-700">
+                    The ambitious 'Red Planet Frontier' project, aiming to establish humanity's first permanent colony on Mars, has secured an unprecedented funding injection from a consortium of private investors and international space agencies. The multi-billion dollar boost is expected to accelerate the construction phase, with the first crewed mission now slated for early next decade.
+                </p>
+                <div class="image-container" id="image-space-mission">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_powerful_rocket_launching_into_space_from_a_launchpad.width-1200.jpg" alt="Rocket Launch" class="w-full h-auto mt-3 rounded-md">
+                </div>
+                <p class="article-body text-sm text-gray-600 mt-2">
+                    This significant investment underscores a renewed global commitment to space exploration and the long-term vision of making humanity a multi-planetary species. Engineers are already working on advanced life-support systems and habitat designs to ensure the safety and sustainability of the future Martian inhabitants.
+                </p>
+            </article>
+        </div>
+
+        <div class="section-divider"></div>
+
+        
+        <aside class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="sidebar-item">
+                <h3 class="text-xl mb-2">Local Sports: City Team Wins Championship!</h3>
+                <div class="image-container" id="image-sports-win">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_basketball_team_celebrating_a_championship_win_confetti.width-1200.jpg" alt="Basketball Team Celebrates" class="w-full h-auto mt-2 rounded-md">
+                </div>
+                <p class="text-sm">The Riverdale Rockets clinched the national basketball championship last night in a thrilling overtime victory. Fans celebrated late into the night...</p>
+            </div>
+            <div class="sidebar-item">
+                <h3 class="text-xl mb-2">Weather Forecast: Sunny with a Chance of Innovation</h3>
+                <div class="image-container" id="image-weather">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_bright_sunny_sky_with_a_few_wispy_clouds_clear_weather.width-1200.jpg" alt="Sunny Sky Forecast" class="w-full h-auto mt-2 rounded-md">
+                </div>
+                <p class="text-sm">Expect clear skies and warm temperatures throughout the region tomorrow. Highs around 28°C. Perfect weather for groundbreaking discoveries!</p>
+            </div>
+            <div class="sidebar-item">
+                <h3 class="text-xl mb-2">Opinion: The Future is Now</h3>
+                <div class="image-container" id="image-opinion">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/A_thoughtful_person_writing_at_a_desk_surrounded_by_books.width-1200.jpg" alt="Opinion Columnist" class="w-full h-auto mt-2 rounded-md">
+                </div>
+                <p class="text-sm">Our editorial board reflects on the rapid pace of technological advancement and its implications for society. Are we ready for what's next?</p>
+            </div>
+        </aside>
+
+        
+        <footer class="text-center text-gray-500 text-xs pt-6 border-t border-gray-200">
+            &copy; 2025 The Daily Chronicle. All rights reserved. Published by Global News Corp.
+        </footer>
+    </div>
+</body>
+</html>
